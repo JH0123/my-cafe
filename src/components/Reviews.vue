@@ -19,7 +19,7 @@ export default {
   },
   mounted() {
     axios
-      .get("https://jsonplaceholder.typicode.com/comments")
+      .get("/api/comments")
       .then((response) => {
         console.log(response);
         this.comments = response.data;
